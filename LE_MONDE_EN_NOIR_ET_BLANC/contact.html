@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Révision HTML5 &amp; CSS3 &amp; Javascript</title>
+        <link rel="shortcut icon" href="images/icone.png" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/nb.css">
+        <script src="/assets/js/jquery-3.4.1.min.js"></script>
+        <script src="/assets/js/menu.js"></script>
+    </head>
+    <body>
+        <header id="mainHeader">
+            <img src="/images/layout/nb_logo.svg" alt="Logo N&amp;B" id="logoImg"/>
+            <h1>Le monde en noir &amp; blanc</h1>
+            <nav id="mainNav">
+                <h1 class="accessibility">Menu principal</h1>
+                <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
+                <ul>
+                    <li><a href="index.html" title="Vers la page d'accueil du site 'Le monde en noir et blanc'">Accueil</a></li>
+                    <li><a href="galleries.html" title="Vers les galeries photo de ce site">Galeries</a></li>
+                    <li><a href="contact.html" title="Vers la page de contact de ce site">Contact</a></li>
+                    <li><a href="about.html" title="En savoir plus sur ce site et sur son propriétaire, Jean Vincentz">À propos</a></li>
+                    <li><a href="blog.html" title="Visitez notre blog et venez discuter photographie avec les autres membres du site">Blog</a></li>
+                </ul>
+            </nav>
+            <button id="menuToggle"><img src="/images/layout/hamburger.svg" alt="Ouvrir / Fermer le menu"/></button>
+        </header><!--Ici se termine le #mainHeader-->
+        <section id="pageContent" class="oneCol contact">
+            <main>
+                <h1>Contactez-nous</h1>
+                <p>Merci de compléter le formulaire suivant pour nous contacter. Tous les champs de ce formulaire sont requis.</p>
+                <form id="frmContact" action="/merci.html">
+                    <div>
+                        <div>
+                            <label for="fName">Prénom</label>
+                            <input type="text" name="fName" placeholder="John" id="fName" required autofocus>
+                        </div>
+                        <div>
+                            <label for="lName">Nom</label>
+                            <input type="text" name="lName" placeholder="Doe" id="lName" required>
+                        </div>
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" placeholder="John.Doe@email.com" id="email" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="message">Votre message</label>
+                            <textarea name="message" id="message" placeholder="Le message que vous souhaitez envoyé" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </main>
+        </section><!--Ici se termine le #pageContent-->
+        <footer id="mainFooter">
+            <p>&copy; Copyright Jean Vincentz - 2020</p>
+        </footer><!--Ici se termine le #mainFooter-->
+    </body>
+</html>
